@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Overview
+This project integrates a React-based frontend with a Node.js backend to demonstrate a simple web application. It features a login page, which connects to a previously developed Node assignment for authentication, and four additional pages (Home, About Us, Jobs, Contact) each with a dedicated React component.
+
+Features
+Login Page: Utilizes usernames and passwords from the previous assignment for authentication.
+React Components: Four main pages (Home, About-us, Jobs, Contact) built using React components.
+Dynamic Component Rendering: Utilizes React's map() function to dynamically render components on at least one page.
+Styling: Enhanced with CSS for better aesthetics.
+
