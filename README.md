@@ -1,80 +1,160 @@
-# Getting Started with Create React App
+# Job Portal Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the code for a job portal application. The application allows users to view job listings, learn about the company, and contact the organization. Users can also log in to access protected resources.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [File Structure](#file-structure)
+- [Code Explanation](#code-explanation)
+- [License](#license)
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Job Portal Application is designed to provide users with a platform to browse job listings, learn about the company, and contact the organization. It includes a login system for users to access protected resources.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Browse job listings
+- Learn about the company
+- Contact the organization
+- User login system
+- Responsive design for mobile and desktop
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To run this project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/your-username/Job-Portal-App.git
+   cd Job-Portal-App
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install the required packages**:
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Start the development server**:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Once the development server is running, open your browser and navigate to `http://localhost:3000` to view the Job Portal Application.
 
-## Learn More
+## File Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The repository is organized as follows:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+Job-Portal-App/
+│
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+│
+├── src/
+│   ├── App/
+│   │   ├── Card/
+│   │   │   └── card.js
+│   │   ├── NavBar/
+│   │   │   └── nav.js
+│   │   └── App.js
+│   ├── Components/
+│   │   ├── AboutUs/
+│   │   │   └── about.js
+│   │   ├── Contact/
+│   │   │   └── contact.js
+│   │   ├── Home/
+│   │   │   └── home.js
+│   │   ├── Jobs/
+│   │   │   └── jobs.js
+│   │   ├── Login/
+│   │   │   ├── login.js
+│   │   │   └── protected.js
+│   ├── assets/
+│   │   ├── 1.png
+│   │   ├── 2.png
+│   │   ├── 3.png
+│   │   └── background.webp
+│   ├── App.css
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+│
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
+```
 
-### Code Splitting
+## Code Explanation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Main Components
 
-### Analyzing the Bundle Size
+1. **App.js**:
+   - The main component that sets up the structure of the application.
+   - Imports necessary styles and other components.
+   - Manages routing to different pages like Home, About Us, Contact, Jobs, and Login.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Components/Home/home.js**:
+   - The home page of the application.
+   - Provides a brief introduction to the website and links to other sections.
 
-### Making a Progressive Web App
+3. **Components/AboutUs/about.js**:
+   - The about us page.
+   - Contains information about the company.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. **Components/Contact/contact.js**:
+   - The contact page.
+   - Provides a form or information to contact the organization.
 
-### Advanced Configuration
+5. **Components/Jobs/jobs.js**:
+   - Displays the job listings.
+   - Fetches and shows available job positions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+6. **Components/Login/login.js**:
+   - Manages user login.
+   - Provides a form for user authentication.
 
-### Deployment
+7. **Components/Login/protected.js**:
+   - Handles protected routes.
+   - Ensures only logged-in users can access certain resources.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+8. **App/Card/card.js**:
+   - Reusable card component to display job information or other details.
 
-### `npm run build` fails to minify
+9. **App/NavBar/nav.js**:
+   - Navigation bar component.
+   - Provides links to different sections of the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Supporting Files
 
-Overview
-This project integrates a React-based frontend with a Node.js backend to demonstrate a simple web application. It features a login page, which connects to a previously developed Node assignment for authentication, and four additional pages (Home, About Us, Jobs, Contact) each with a dedicated React component.
+- **index.js**:
+  - Entry point for the React application.
+  - Renders the `App` component into the DOM.
+  
+- **App.css, index.css**:
+  - Contains global and component-specific styles.
 
-Features
-Login Page: Utilizes usernames and passwords from the previous assignment for authentication.
-React Components: Four main pages (Home, About-us, Jobs, Contact) built using React components.
-Dynamic Component Rendering: Utilizes React's map() function to dynamically render components on at least one page.
-Styling: Enhanced with CSS for better aesthetics.
-
+- **package.json**:
+  - Lists dependencies and scripts for the project.
+  
+- **public/index.html**:
+  - Main HTML file that serves the React application.
